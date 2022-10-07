@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup Qatar 2022™</title>
+    
+    <link rel="shortcut icon" href="cup_logo_.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/slick/slick.css">
+</head>
+<body>
+    <section class="main-video">
+        <div class="qatar-video">
+            <video loop autoplay muted src="images/cup_video_low_Trim.mp4"></video>
+        </div>
+
+        <div class="qatar-overlay"></div>
+
+        <div class="qatar-info">
+            <div class="container" style="width: 100%;">
+                <h2>Catar 2022</h2>
+                <h3>A copa mudial esta chegando!!</h3>
+                <p>Fique por dentro de todas as notícias em relação a copa do mundo de 2022, realizada no Catar</p>       
+            </div>
+        </div>
+    </section>
+
+    <section class="main-clock">
+        <div class="main-clock-center">
+            <div class="clock-info">
+                <p id="data_days"></p>
+                <p class="clock-mesure">DIAS</p>
+            </div>
+            <div class="clock-info">
+                :
+             </div>
+            <div class="clock-info">
+                <p id="data_hours"></p>
+                <p class="clock-mesure">HORAS</p>
+            </div>
+            <div class="clock-info">
+               :
+            </div>
+            <div class="clock-info">
+                <p id="data_minutes"></p>
+                <p class="clock-mesure">MINUTOS</p>
+            </div>
+        </div>        
+    </section>
+
+    <section class="main-stadiums">
+        <div class="container justify-content-center">
+            <div class="py-5" id="stadyums">
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_al_bayt.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Al Bayt</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_khalifa_international.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Khalifa International</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_al_thumama.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Al Thumama</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_ahmad_bin_ali.jpg" class="card-img-top">
+                          <p class="stadyums-info">Ahmad Bin Ali</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_lusail.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Lusail</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_ras_abu_aboud.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio 974 (Ras Abu Aboud)</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_education_city.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Education City</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ms-4">
+                    <div class="card">
+                      <div class="card-body">                      
+                          <img src="images/stadiums_al_janoub.jpg" class="card-img-top">
+                          <p class="stadyums-info">Estádio Al Janoub</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="main-groups">
+        <div class="container justify-content-center">
+            <h4 class="group-title">Grupo de jogos</h4>
+
+            <div class="rows container justify-content-center mt-4"></div>
+                <div class="row-groups">
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo A</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Catar" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/qat" alt="Catar" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="A1 - Catar">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Equador" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ec" alt="Equador" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="A2 - Equador">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Senegal" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/sn" alt="Senegal" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="A3 - Senegal">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Holanda" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/nl" alt="Holanda" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="A4 - Holanda">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo B</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Inglaterra" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/gb-eng" alt="Inglaterra" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B1 - Inglaterra">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Irã" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ir" alt="Irã" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B2 - Irã">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Estados Unidos" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/usa" alt="Estados Unidos" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B3 - Estados Unidos">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Gales" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/gb-wls" alt="Gales" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B4 - Gales">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo C</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Argentina" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ar" alt="Argentina" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="C1 - Argentina">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Arábia Saudita" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/sa" alt="Arábia Saudita" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="C2 - Arábia Saudita">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="México" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/mx" alt="México" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="C3 - México">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Polônia" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/pl" alt="Polônia" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="C4 - Polônia">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row-groups">
+                    <div class="circle text-center">
+                        <h5 class="">Grupo D</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="França" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/fr" alt="França" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="D1 - França">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Dinamarca" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/dk" alt="Dinamarca" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="D2 - Dinamarca">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Tunisía" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/tn" alt="Tunisía" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="D3 - Tunisía">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Austrália" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/au" alt="Austrália" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="D4 - Austrália">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo E</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Espanha" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/es" alt="Espanha" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="E1 - Espanha">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Alemanhã" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/de" alt="Alemanhã" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="E2 - Alemanhã">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Japão" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/jp" alt="Estados Unidos" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="E3 - Japão">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Costa Rica" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/cr" alt="Costa Rica" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="E4 - Costa Rica">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo F</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Bélgica" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/be" alt="Bélgica" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="F1 - Bélgica">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Canadá" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ca" alt="Canadá" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="F2 - Canadá">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Marrocos" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ma" alt="Marrocos" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="F3 - Marrocos">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Croácia" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/hr" alt=" Croácia" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="F4 - Croácia">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row-groups">
+                    <div class="circle text-center">
+                        <h5 class="">Grupo G</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Brasil" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/br" alt="Brasil" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="G1 - Brasil">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Sérbia" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/rs" alt="Sérbia" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="G2 - Sérbia">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Suíça" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/ch" alt="Suíça" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="G3 - Suíça">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Camarões" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/cm" alt="Camarões" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="G4 - Camarões">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle text-center mt-4">
+                        <h5 class="">Grupo H</h5>
+    
+                        <div class="groups-division d-inline-block justify-content-center mx-auto">
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Portugal" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/pt" alt="Portugal" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="H1 - Portugal">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Gana" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/gh" alt="Gana" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="H2 - Gana">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Uruguai" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/uy" alt="Uruguai" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="H3 - Uruguai">
+                            </div>
+                            <div class="input-group  shadow">
+                                <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Corea do Sul" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/kr" alt="Corea do Sul" srcset=""width="50" height="33"></span>
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="H4 - Corea do Sul">
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="src/moment.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    <script type="text/javascript" src="src/slick/slick.js"></script>
+</body>
+</html>

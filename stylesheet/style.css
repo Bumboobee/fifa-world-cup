@@ -1,0 +1,254 @@
+@import url('http://fonts.cdnfonts.com/css/qatar2022');
+@import url('http://fonts.cdnfonts.com/css/graphik');
+
+:root {
+    --main-red: #56042C;
+    --main-yellow: #FEC310;
+    --main-soft-blue: #49BCE3;
+    --main-strong-blue: #1077C3;
+    --main-strongest-blue: #020F2A;
+    --main-strongest-blue-comb: #30074C;
+    --main-write: #FFFFFF;
+    --main-black: #000000;
+    --sec-red: #560519;
+    --sec-orange: #FE5400;
+    --sec-green: #0E5200;
+    --sec-gray: #696969;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*#region main-video*/
+    .main-video {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .qatar-video video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .qatar-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: sepia(100%) hue-rotate(10deg) saturate(200%);
+        mix-blend-mode: overlay;
+    }
+
+    .qatar-info {
+        position: absolute;
+        z-index: 10;
+        color: var(--main-write);
+        font-family: 'Qatar2022';
+        display: block;
+        align-items: baseline;
+        bottom: 0;
+        margin-left: 5%;
+        line-height: -10px;
+    }
+
+    .qatar-info h2 {
+        font-size: clamp(2.7rem, 4.7vw, 6.7rem); 
+    }
+
+    .qatar-info h3 {
+        font-size: clamp(1.7rem, 3.7vw, 5.7rem); 
+        width: 95%;
+    }
+
+    .qatar-info p {
+        font-size: clamp(.8rem, 1.2vw, 2rem);
+        width: 90%;  
+    }
+/*#endregion main-video*/
+
+/*#region main-clock*/
+    .main-clock {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 15vh !important;
+        background-color: var(--main-red);
+        background-image: linear-gradient(var(--main-red), var(--main-strongest-blue));
+        color: var(--main-yellow);
+    }
+    .main-clock .main-clock-center {
+        text-align: center;
+        font-size: clamp(1.5rem, 2.5vw, 4rem);
+        font-family: 'Graphik';
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10px;
+        gap: 15px;
+    }
+    .clock-info {
+        width: 4rem;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .clock-mesure {
+        position: relative;
+        font-size: clamp(.7rem, 1vw, 1.2rem);
+        display: block;
+        margin: -20px auto !important; 
+    } 
+/*#endregion main-clock*/
+
+/*#region main-stadyums*/
+    .main-stadiums {
+        /* height: 400px; */
+        background-color: var(--main-strongest-blue);
+        background-image: linear-gradient(135deg, var(--main-strongest-blue) 60%, var(--main-strongest-blue-comb));
+    }
+
+    .card, .card-img-top {
+        width: 500px !important; 
+        height: 300px !important;
+    }
+
+    .card-img-top {
+        filter: blur(.7px);
+    }
+
+    .card-body {
+        padding: 0 !important;
+    }
+
+    .stadyums-info {
+        position: absolute;
+        z-index: 10;
+        color: var(--main-yellow);
+        font-family: 'Qatar2022';
+        display: block;
+        align-items: baseline;
+        bottom: 0;
+        margin-left: 5%;
+        line-height: -10px;
+    }
+
+    #stadyums {
+        width: 100%; 
+        gap: 20px !important; 
+        display: flex !important; 
+        overflow:hidden;
+    }
+
+    .input-group {
+       margin-top: 1.5em !important;
+
+    }
+
+    
+/*#endregion main-stadyums*/
+
+@media only screen and (max-width: 600px) {    
+    .main-clock {
+        height: 70px !important;
+    }
+    
+    .card, .card-img-top {
+        width: 300px !important; 
+        height: 150px !important;
+    }
+
+    .row-groups {
+        flex-direction: column;
+    }
+
+    .circle {
+        height: 310px !important;
+        width: 310px !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .input-group {
+        margin-bottom: 2.5em !important;
+        width: 13em !important;
+        height: 12px;
+        padding: 0;
+    }
+
+    .groups-division {
+        margin-top: -15px;
+    }
+
+    .span-news {
+        font-size: clamp(.9rem, 1.2vw, 1.5rem) !important;
+        font-weight: 700;
+    }
+}
+
+/*#region main-groups*/
+    .main-groups {
+        background-image: linear-gradient(135deg, var(--main-strongest-blue) 60%, var(--main-strongest-blue-comb));
+    }
+
+    .group-title {
+        color: var(--main-write);
+        font-size: clamp(1.5rem, 1.7vw, 2rem); 
+        padding-top: 20px;
+    }
+
+    .row-groups {
+        display: flex; 
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .row-groups:nth-of-type(3n+1) { 
+        justify-content: space-evenly !important;
+    }
+
+    .circle {
+        display: block;
+        background-image: linear-gradient(
+            to top left,
+            var(--main-write),
+            var(--main-write)
+        );
+        height: 400px;
+        padding: 20px;
+        width: 400px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        flex-direction: column;
+    }
+
+    .input-group  {
+        max-width: 250px !important;
+    }
+/*#endregion main-groups*/
+
+.span-news {
+    font-size: clamp(.3rem, 1vw, 1.2rem);
+    font-weight: 700;
+}
+
+.swal2-input {
+    margin-top: -px;
+}
+
+.swal2-modal {
+    font-family: 'Qatar2022';
+}
