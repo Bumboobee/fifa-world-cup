@@ -1,4 +1,4 @@
-/*#region main-video*/
+/*#region main-fonts*/
     @font-face {
         font-family: 'Qatar2022';
         font-style: normal;
@@ -120,7 +120,7 @@
         font-weight: 950;
         src: local('Graphik'), url('https://fonts.cdnfonts.com/s/27112/GraphikSuperItalic.woff') format('woff');
     }
-/*#endregion main-video*/
+/*#endregion main-fonts*/
 
 :root {
     --main-red: #56042C;
@@ -281,44 +281,6 @@ body {
     
 /*#endregion main-stadyums*/
 
-@media only screen and (max-width: 600px) {    
-    .main-clock {
-        height: 70px !important;
-    }
-    
-    .card, .card-img-top {
-        width: 300px !important; 
-        height: 150px !important;
-    }
-
-    .row-groups {
-        flex-direction: column;
-    }
-
-    .circle {
-        height: 310px !important;
-        width: 310px !important;
-        display: block;
-        margin: 0 auto !important;
-    }
-
-    .input-group {
-        margin-bottom: 2.5em !important;
-        width: 13em !important;
-        height: 12px;
-        padding: 0;
-    }
-
-    .groups-division {
-        margin-top: -15px;
-    }
-
-    .span-news {
-        font-size: clamp(.9rem, 1.2vw, 1.5rem) !important;
-        font-weight: 700;
-    }
-}
-
 /*#region main-groups*/
     .main-groups {
         background-image: linear-gradient(135deg, var(--main-strongest-blue) 60%, var(--main-strongest-blue-comb));
@@ -361,15 +323,55 @@ body {
     }
 /*#endregion main-groups*/
 
-.span-news {
-    font-size: clamp(.3rem, 1vw, 1.2rem);
-    font-weight: 700;
-}
+/*#region swal*/
+    .span-news {
+        font-size: clamp(.3rem, 1vw, 1.2rem);
+        font-weight: 700;
+    }
 
-.swal2-input {
-    margin-top: -px;
-}
+    .swal2-input {
+        margin-top: -px;
+    }
 
-.swal2-modal {
-    font-family: 'Qatar2022';
+    .swal2-modal {
+        font-family: 'Qatar2022';
+    }
+/*#endregion swal*/
+
+@media only screen and (max-width: 600px) {    
+    .main-clock {
+        height: 70px !important;
+    }
+    
+    .card, .card-img-top {
+        width: 300px !important; 
+        height: 150px !important;
+    }
+
+    .row-groups {
+        flex-direction: column;
+    }
+
+    .circle {
+        height: 310px !important;
+        width: 310px !important;
+        display: block;
+        margin: 0 auto !important;
+    }
+
+    .input-group {
+        margin-bottom: 2.5em !important;
+        width: 13em !important;
+        height: 12px;
+        padding: 0;
+    }
+
+    .groups-division {
+        margin-top: -15px;
+    }
+
+    .span-news {
+        font-size: clamp(.9rem, 1.2vw, 1.5rem) !important;
+        font-weight: 700;
+    }
 }
