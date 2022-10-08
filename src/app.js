@@ -90,6 +90,6 @@ $(document).ready(function() {
     slideEstadio();
     bootstrapInit();
     setInterval(function() { calcData(); }, 1000);
-    mostraSwal(); 
+    //mostraSwal(); 
     
 })

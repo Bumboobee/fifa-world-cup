@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="images/cup_logo_.png" type="image/x-icon">
 </head>
 <body>
+
+
     <section class="main-video">
         <div class="qatar-video">
             <video loop autoplay muted src="images/cup_video_low_Trim.mp4"></video>
@@ -30,36 +32,40 @@
     </section>
 
     <section class="main-clock">
-        <div class="main-clock-center">
-            <div class="clock-info">
-                <p id="data_days"></p>
-                <p class="clock-mesure">DIAS</p>
-            </div>
-            <div class="clock-info">
+        <div class="container">        
+            <div class="main-clock-center">
+                <div class="clock-info">
+                    <p id="data_days"></p>
+                    <p class="clock-mesure">DIAS</p>
+                </div>
+                <div class="clock-info">
+                    :
+                </div>
+                <div class="clock-info">
+                    <p id="data_hours"></p>
+                    <p class="clock-mesure">HORAS</p>
+                </div>
+                <div class="clock-info">
                 :
-             </div>
-            <div class="clock-info">
-                <p id="data_hours"></p>
-                <p class="clock-mesure">HORAS</p>
-            </div>
-            <div class="clock-info">
-               :
-            </div>
-            <div class="clock-info">
-                <p id="data_minutes"></p>
-                <p class="clock-mesure">MINUTOS</p>
-            </div>
-        </div>        
-    </section>
-
+                </div>
+                <div class="clock-info">
+                    <p id="data_minutes"></p>
+                    <p class="clock-mesure">MINUTOS</p>
+                </div>
+            </div> 
+            <h4 class="group-title text-center"><span class="badge bg-warning">Para a copa do <span class="text-danger">Catar</span></span></h4>
+        </div>       
+    </section>    
+    
     <section class="main-stadiums">
         <div class="container justify-content-center">
+            <h4 class="group-title">ESTÁDIOS</h4>
             <div class="py-5" id="stadyums">
                 <div class="ms-4">
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_al_bayt.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Al Bayt</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Al Bayt</span></p>
                       </div>
                     </div>
                 </div>
@@ -67,7 +73,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_khalifa_international.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Khalifa International</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Khalifa International</span></p>
                       </div>
                     </div>
                 </div>
@@ -75,7 +81,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_al_thumama.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Al Thumama</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Al Thumama</span></p>
                       </div>
                     </div>
                 </div>
@@ -83,7 +89,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_ahmad_bin_ali.jpg" class="card-img-top">
-                          <p class="stadyums-info">Ahmad Bin Ali</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Ahmad Bin Ali</span></p>
                       </div>
                     </div>
                 </div>
@@ -91,7 +97,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_lusail.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Lusail</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Lusail</span></p>
                       </div>
                     </div>
                 </div>
@@ -99,7 +105,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_ras_abu_aboud.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio 974 (Ras Abu Aboud)</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio 974 (Ras Abu Aboud)</span></p>
                       </div>
                     </div>
                 </div>
@@ -107,7 +113,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_education_city.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Education City</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Education City</span></p>
                       </div>
                     </div>
                 </div>
@@ -115,7 +121,7 @@
                     <div class="card">
                       <div class="card-body">                      
                           <img src="images/stadiums_al_janoub.jpg" class="card-img-top">
-                          <p class="stadyums-info">Estádio Al Janoub</p>
+                          <p class="stadyums-info"><span class="badge bg-white"> Estádio Al Janoub</span></p>
                       </div>
                     </div>
                 </div>
@@ -125,7 +131,7 @@
     
     <section class="main-groups">
         <div class="container justify-content-center">
-            <h4 class="group-title">Grupo de jogos</h4>
+            <h4 class="group-title">GRUPO DE JOGOS</h4>
 
             <div class="rows container justify-content-center mt-4"></div>
                 <div class="row-groups">
@@ -165,7 +171,7 @@
                             </div>
                             <div class="input-group  shadow">
                                 <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Estados Unidos" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/usa" alt="Estados Unidos" srcset=""width="50" height="33"></span>
-                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B3 - Estados Unidos">
+                                <input type="text" class="form-control" id="eua" aria-describedby="basic-addon1" style="font-weight: 700;" disabled value="B3 - EUA">
                             </div>
                             <div class="input-group  shadow">
                                 <span  data-bs-toggle="tooltip" type="button" data-bs-placement="top" title="Gales" class="input-group-text" id="basic-addon1"><img src="https://countryflagsapi.com/png/gb-wls" alt="Gales" srcset=""width="50" height="33"></span>
