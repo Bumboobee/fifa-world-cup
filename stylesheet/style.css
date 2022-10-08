@@ -401,9 +401,9 @@ body {
             var(--main-write),
             var(--main-write)
         );
-        height: 400px;
+        height: 390px;
         padding: 20px;
-        width: 400px;
+        width: 390px;
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
