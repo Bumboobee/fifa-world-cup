@@ -70,7 +70,7 @@ function clickNewsLetter() {
 
 function mostraSwal() {
     Swal.fire({
-        html: `<h5>BEM VINDO</h5> 
+        html: `<h5>BEM-VINDO</h5> 
                 <h4>COPA MUNDIAL 2022 CATAR</h4>
                 <br/>
                 <span class="span-news">FIQUE POR DENTRO DAS ÚLTIMAS NOTÍCIAS</span>`, 
