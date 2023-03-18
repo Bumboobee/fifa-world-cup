@@ -15,13 +15,14 @@ function formatarData(milisegundos) {
     let days = (totalHours - hours) / 24;
     let arrReturn = [];
 
-    if (hours < 9) 
-        hours =  `0${hours}`;
-    if(days < 9) 
-        days = `0${days}`;
-    if(minutes < 9) 
-        minutes = `0${minutes}`;
+    // if (hours < 9) 
+    //     hours =  `0${hours}`;
+    // if(days < 9) 
+    //     days = `0${days}`;
+    // if(minutes < 9) 
+    //     minutes = `0${minutes}`;
 
+    console.log('tr',days, hours, minutes)
     if (parseInt(days) == 0) {            
         return arrReturn.push(hours, minutes);
     } else if (parseInt(days) >= 1) {
@@ -29,10 +30,13 @@ function formatarData(milisegundos) {
         return $('#data_days').html(days), $('#data_hours').html(hours), $('#data_minutes').html(minutes);       
     }
 
-    if ((parseInt(days) == 41) && (parseInt(hours) == 23) && (parseInt(minutes) == 11)) {
-        let strCupNow = `A copa do <span class="text-danger">Catar</span> já começou!`;
-        return $('.cup-data-info').append(strCupNow);
+    if ((parseInt(days) < 0) && (parseInt(hours)  < 0) && (parseInt(minutes)  < 0)) {
+        // let strCupNow = `A copa do <span class="text-danger">Catar</span> já começou!`;
+        // return $('.cup-data-info').append(strCupNow);
+        $('.main-clock-center').remove();
     }
+
+
     
 }
 
@@ -132,7 +136,7 @@ $(document).ready(function() {
     mostraSwal();       
     slideEstadio();
     bootstrapInit();
-    setInterval(function() { calcData(); }, 1000);
+    //setInterval(function() { calcData(); }, 1000);
     callSwal(); 
     changeNavBar(); 
     closeMenu();
